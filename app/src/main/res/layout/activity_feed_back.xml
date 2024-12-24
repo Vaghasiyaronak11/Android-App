@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FeedBackActivity">
+
+
+    <TextView
+        android:id="@+id/textViewLogo_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/underlined_text"
+        android:textColor="@color/yellowLight"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/feedback" />
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/ed_contact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_contacts_24"
+        android:drawablePadding="10dp"
+        android:hint="Contact Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/ed_feedback"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:hint="Fedback"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/ed_rating"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_star_rate_24"
+        android:drawablePadding="10dp"
+        android:hint="Rating"
+        android:inputType="number"
+        android:maxLength="1"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="300dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Submit"
+        android:textColor="@color/purpleDark" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Back"
+        android:textColor="@color/purpleDark" />
+</LinearLayout>

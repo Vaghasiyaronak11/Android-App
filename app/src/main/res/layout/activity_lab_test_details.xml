@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonLTBBooking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical"
+    tools:context=".LabTestDetailsActivity">
+
+    <TextView
+        android:id="@+id/textViewDDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/underlined_text"
+        android:textColor="@color/yellowLight"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/textViewLDPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Test And Packages"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLDTextMultiline"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:text="Hi | Hello"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="120dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Total Cost : "
+            android:textColor="#1EF30E"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewBMDTotalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#1EF30E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+    android:layout_marginBottom="40dp"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonLDBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="99"/>
+        <Button
+            android:id="@+id/buttonLDAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add To Cart"
+            android:layout_weight="3"
+            android:layout_gravity="end"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp" />
+    </LinearLayout>
+</LinearLayout>

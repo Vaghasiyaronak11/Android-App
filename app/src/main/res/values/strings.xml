@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MediCare </string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string name="underlined_text">
+        <u>24*7 HealthCare</u>
+    </string>
+
+    <string-array name="table_options">
+        <item>Select Order Details</item>
+        <item>All</item>
+        <item>Appointments</item>
+        <item>Bookings</item>
+        <item>Medicines</item>
+
+    </string-array>
+</resources>

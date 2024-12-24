@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".BookAppointmentActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewLogo_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/underlined_text"
+        android:textColor="@color/yellowLight"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:src="@drawable/booklogo"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Appointment"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLTPAppFullName"
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editTextLTPAddress"
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editTextLTPPinCode"
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editTextLTPContactNumber"
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Horizontal LinearLayout for Date and Time selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textColor="@color/yellowLight"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/buttonAppDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"
+                android:text="13/09/2024"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewSelectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Time"
+                android:textColor="@color/yellowLight"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/buttonAppTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="10:00"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBookAppointment"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg"
+        android:text="Book Appointment"
+        android:textColor="@color/purpleDark"
+       android:layout_marginBottom="25dp" />
+
+
+</LinearLayout>
